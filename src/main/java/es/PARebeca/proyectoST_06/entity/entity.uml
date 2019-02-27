@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_cGotUDhwEem9a8y9KhqXkw" name="entity">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_dM6Y4DhwEem9a8y9KhqXkw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-lREsDhwEem9a8y9KhqXkw" name="proyectoST_0.6">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-uD0UDhwEem9a8y9KhqXkw" name="es">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-uM-QDhwEem9a8y9KhqXkw" name="PARebeca">
+          <packagedElement xmi:type="uml:Package" xmi:id="_-uM-QThwEem9a8y9KhqXkw" name="proyectoST_06">
+            <packagedElement xmi:type="uml:Package" xmi:id="_-uWvQDhwEem9a8y9KhqXkw" name="entity">
+              <packagedElement xmi:type="uml:Class" xmi:id="_-uggQDhwEem9a8y9KhqXkw" name="Precio" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-6kmUDhwEem9a8y9KhqXkw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                  <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_-6uXUDhwEem9a8y9KhqXkw" name="defaultValue">
+                    <language>JAVA</language>
+                    <body>1L</body>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-7BSQDhwEem9a8y9KhqXkw" name="idPrecio" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-7UNMThwEem9a8y9KhqXkw" name="tapas" visibility="private" type="_-7UNMDhwEem9a8y9KhqXkw" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-7d-MDhwEem9a8y9KhqXkw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-7nvMDhwEem9a8y9KhqXkw" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-7nvMThwEem9a8y9KhqXkw" name="precio" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-7w5IDhwEem9a8y9KhqXkw" name="pvp" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-5rOcDhwEem9a8y9KhqXkw" name="Precio implements Serializable" client="_-uggQDhwEem9a8y9KhqXkw" supplier="_-uzbMThwEem9a8y9KhqXkw" contract="_-uzbMThwEem9a8y9KhqXkw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-8qRADhwEem9a8y9KhqXkw" name="Precio" specification="_-76qIDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-92j0DhwEem9a8y9KhqXkw" name="Precio" specification="_-89L8DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    super();&#xD;
+    this.idPrecio = id;&#xD;
+    this.tapas = tapas;&#xD;
+    this.precio = precio;&#xD;
+    this.pvp = pvp;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_--TPwDhwEem9a8y9KhqXkw" name="getPrecio" specification="_--JewDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return precio;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_--v7sjhwEem9a8y9KhqXkw" name="getTapas" specification="_--cZsDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return tapas;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-_MnoDhwEem9a8y9KhqXkw" name="setTapas" specification="_--5FoDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.tapas = tapas;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-_VxkThwEem9a8y9KhqXkw" name="setPrecio" specification="_-_MnoThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.precio = precio;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-_ydgDhwEem9a8y9KhqXkw" name="getPvp" specification="_-_osgDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return pvp;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__AFYcThwEem9a8y9KhqXkw" name="setPvp" specification="_-_8OgDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.pvp = pvp;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__AY6cThwEem9a8y9KhqXkw" name="getId" specification="__APJcDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return idPrecio;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__A0_UDhwEem9a8y9KhqXkw" name="setId" specification="__AiEYDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.idPrecio = id;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__BIhUThwEem9a8y9KhqXkw" name="hashCode" specification="__A-wUDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    int hash = 0;&#xD;
+    hash += (idPrecio != null ? idPrecio.hashCode() : 0);&#xD;
+    return hash;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__CBSIDhwEem9a8y9KhqXkw" name="equals" specification="__BuXMDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    // TODO: Warning - this method won't work in the case the id fields are not set&#xD;
+    if (!(object instanceof Precio)) {&#xD;
+        return false;&#xD;
+    }&#xD;
+    Precio other = (Precio) object;&#xD;
+    if ((this.idPrecio == null &amp;&amp; other.idPrecio != null) || (this.idPrecio != null &amp;&amp; !this.idPrecio.equals(other.idPrecio))) {&#xD;
+        return false;&#xD;
+    }&#xD;
+    return true;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__CxgEDhwEem9a8y9KhqXkw" name="toString" specification="__CLDIDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return &quot;Precio [idPrecio=&quot; + idPrecio + &quot;, tapas=&quot; + tapas + &quot;, precio=&quot; + precio + &quot;, pvp=&quot; + pvp + &quot;]&quot;;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_-76qIDhwEem9a8y9KhqXkw" name="Precio" visibility="public" method="_-8qRADhwEem9a8y9KhqXkw"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_-89L8DhwEem9a8y9KhqXkw" name="Precio" visibility="public" method="_-92j0DhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_-9QG4DhwEem9a8y9KhqXkw" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_-9Z34DhwEem9a8y9KhqXkw" name="tapas" type="_-7UNMDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-9jo4DhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-9jo4ThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_-9sy0DhwEem9a8y9KhqXkw" name="precio">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_-9sy0ThwEem9a8y9KhqXkw" name="pvp">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_--JewDhwEem9a8y9KhqXkw" name="getPrecio" visibility="public" method="_--TPwDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_--JewThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_--cZsDhwEem9a8y9KhqXkw" name="getTapas" visibility="public" method="_--v7sjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_--mKsDhwEem9a8y9KhqXkw" type="_-7UNMDhwEem9a8y9KhqXkw" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_--v7sDhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_--v7sThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_--5FoDhwEem9a8y9KhqXkw" name="setTapas" visibility="public" method="_-_MnoDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_--5FoThwEem9a8y9KhqXkw" name="tapas" type="_-7UNMDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-_C2oDhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-_C2oThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_-_MnoThwEem9a8y9KhqXkw" name="setPrecio" visibility="public" method="_-_VxkThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_-_VxkDhwEem9a8y9KhqXkw" name="precio">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_-_osgDhwEem9a8y9KhqXkw" name="getPvp" visibility="public" method="_-_ydgDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_-_osgThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_-_8OgDhwEem9a8y9KhqXkw" name="setPvp" visibility="public" method="__AFYcThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__AFYcDhwEem9a8y9KhqXkw" name="pvp">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__APJcDhwEem9a8y9KhqXkw" name="getId" visibility="public" method="__AY6cThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__AY6cDhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__AiEYDhwEem9a8y9KhqXkw" name="setId" visibility="public" method="__A0_UDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Ar1YDhwEem9a8y9KhqXkw" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__A-wUDhwEem9a8y9KhqXkw" name="hashCode" visibility="public" method="__BIhUThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__BIhUDhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__BuXMDhwEem9a8y9KhqXkw" name="equals" visibility="public" method="__CBSIDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__B4IMDhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__B4IMThwEem9a8y9KhqXkw" name="object" type="__BbcQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__CLDIDhwEem9a8y9KhqXkw" name="toString" visibility="public" method="__CxgEDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__CnvEDhwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_-7UNMDhwEem9a8y9KhqXkw" name="Tapa" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__DhG8DhwEem9a8y9KhqXkw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                  <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="__DqQ4DhwEem9a8y9KhqXkw" name="defaultValue">
+                    <language>JAVA</language>
+                    <body>1L</body>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__D0B4DhwEem9a8y9KhqXkw" name="idTapa" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__D0B4jhwEem9a8y9KhqXkw" name="tipo" visibility="private" type="_AJYi0DhxEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__D0B4zhwEem9a8y9KhqXkw" name="nombre" visibility="private" type="__CU0IDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__EQt0DhwEem9a8y9KhqXkw" name="fecha" visibility="private" type="__D9y4DhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__EZ3wDhwEem9a8y9KhqXkw" name="servida" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__EjowDhwEem9a8y9KhqXkw" name="precios" visibility="private" type="_-uggQDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__DXV8DhwEem9a8y9KhqXkw" name="Tapa implements Serializable" client="_-7UNMDhwEem9a8y9KhqXkw" supplier="_-uzbMThwEem9a8y9KhqXkw" contract="_-uzbMThwEem9a8y9KhqXkw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__FAUsDhwEem9a8y9KhqXkw" name="Tapa" specification="__EtZwDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__F5skThwEem9a8y9KhqXkw" name="Tapa" specification="__FKFsDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    super();&#xD;
+    this.tipo = tipo;&#xD;
+    this.nombre = nombre;&#xD;
+    this.fecha = new Date();&#xD;
+    this.servida = false;&#xD;
+    //		this.recetas = recetas;&#xD;
+    this.precios = precios;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__GMngThwEem9a8y9KhqXkw" name="getIdTapa" specification="__GC2gDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return idTapa;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__GWYgDhwEem9a8y9KhqXkw" name="setIdTapa" specification="__GMngjhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.idTapa = idTapa;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__GpTcDhwEem9a8y9KhqXkw" name="getTipo" specification="__GficDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return tipo;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__GydYThwEem9a8y9KhqXkw" name="setTipo" specification="__GpTcThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.tipo = tipo;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__HF_YDhwEem9a8y9KhqXkw" name="getNombre" specification="__G8OYDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return nombre;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__HirUDhwEem9a8y9KhqXkw" name="setNombre" specification="__HY6UDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.nombre = nombre;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Hr1QThwEem9a8y9KhqXkw" name="getFecha" specification="__HirUThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return fecha;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__H-wMDhwEem9a8y9KhqXkw" name="setFecha" specification="__H1mQDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.fecha = fecha;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ISSMDhwEem9a8y9KhqXkw" name="isServida" specification="__IIhMDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return servida;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__IbcIThwEem9a8y9KhqXkw" name="setServida" specification="__ISSMThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.servida = servida;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Iu-IDhwEem9a8y9KhqXkw" name="getPrecios" specification="__IlNIDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return precios;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__I4IEjhwEem9a8y9KhqXkw" name="setPrecios" specification="__I4IEDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.precios = precios;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__JU0ADhwEem9a8y9KhqXkw" name="hashCode" specification="__JB5EDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    int hash = 0;&#xD;
+    hash += (idTapa != null ? idTapa.hashCode() : 0);&#xD;
+    return hash;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__JqLMDhwEem9a8y9KhqXkw" name="equals" specification="__JU0AThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    // TODO: Warning - this method won't work in the case the id fields are not set&#xD;
+    if (!(object instanceof Tapa)) {&#xD;
+        return false;&#xD;
+    }&#xD;
+    Tapa other = (Tapa) object;&#xD;
+    if ((this.idTapa == null &amp;&amp; other.idTapa != null) || (this.idTapa != null &amp;&amp; !this.idTapa.equals(other.idTapa))) {&#xD;
+        return false;&#xD;
+    }&#xD;
+    return true;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__JzVIDhwEem9a8y9KhqXkw" name="toString" specification="__Jxf8DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return &quot;Tapa [idTapa=&quot; + idTapa + &quot;, tipo=&quot; + tipo + &quot;, nombre=&quot; + nombre + &quot;, fecha=&quot; + fecha + &quot;, servida=&quot; + servida + /* &quot;, recetas=&quot; + recetas +  */&#xD;
+    &quot;, precios=&quot; + precios + &quot;]&quot;;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__EtZwDhwEem9a8y9KhqXkw" name="Tapa" visibility="public" method="__FAUsDhwEem9a8y9KhqXkw"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__FKFsDhwEem9a8y9KhqXkw" name="Tapa" visibility="public" method="__F5skThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__FmKkDhwEem9a8y9KhqXkw" name="tipo" type="_AJYi0DhxEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__FmKkThwEem9a8y9KhqXkw" name="nombre" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Fv7kDhwEem9a8y9KhqXkw" name="fecha" type="__D9y4DhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Fv7kThwEem9a8y9KhqXkw" name="servida">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__F5skDhwEem9a8y9KhqXkw" name="precios" type="_-uggQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__GC2gDhwEem9a8y9KhqXkw" name="getIdTapa" visibility="public" method="__GMngThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__GMngDhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__GMngjhwEem9a8y9KhqXkw" name="setIdTapa" visibility="public" method="__GWYgDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__GMngzhwEem9a8y9KhqXkw" name="idTapa">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__GficDhwEem9a8y9KhqXkw" name="getTipo" visibility="public" method="__GpTcDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__GficThwEem9a8y9KhqXkw" type="_AJYi0DhxEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__GpTcThwEem9a8y9KhqXkw" name="setTipo" visibility="public" method="__GydYThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__GydYDhwEem9a8y9KhqXkw" name="tipo" type="_AJYi0DhxEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__G8OYDhwEem9a8y9KhqXkw" name="getNombre" visibility="public" method="__HF_YDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__G8OYThwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__HY6UDhwEem9a8y9KhqXkw" name="setNombre" visibility="public" method="__HirUDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__HY6UThwEem9a8y9KhqXkw" name="nombre" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__HirUThwEem9a8y9KhqXkw" name="getFecha" visibility="public" method="__Hr1QThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Hr1QDhwEem9a8y9KhqXkw" type="__D9y4DhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__H1mQDhwEem9a8y9KhqXkw" name="setFecha" visibility="public" method="__H-wMDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__H1mQThwEem9a8y9KhqXkw" name="fecha" type="__D9y4DhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__IIhMDhwEem9a8y9KhqXkw" name="isServida" visibility="public" method="__ISSMDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__IIhMThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ISSMThwEem9a8y9KhqXkw" name="setServida" visibility="public" method="__IbcIThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__IbcIDhwEem9a8y9KhqXkw" name="servida">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__IlNIDhwEem9a8y9KhqXkw" name="getPrecios" visibility="public" method="__Iu-IDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__IlNIThwEem9a8y9KhqXkw" type="_-uggQDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__I4IEDhwEem9a8y9KhqXkw" name="setPrecios" visibility="public" method="__I4IEjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__I4IEThwEem9a8y9KhqXkw" name="precios" type="_-uggQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__JB5EDhwEem9a8y9KhqXkw" name="hashCode" visibility="public" method="__JU0ADhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__JLDADhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__JU0AThwEem9a8y9KhqXkw" name="equals" visibility="public" method="__JqLMDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__JelADhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__JelAThwEem9a8y9KhqXkw" name="object" type="__BbcQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__Jxf8DhwEem9a8y9KhqXkw" name="toString" visibility="public" method="__JzVIDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__JyuEDhwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_AJYi0DhxEem9a8y9KhqXkw" name="Tipo" visibility="public">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AJhswDhxEem9a8y9KhqXkw" name="cuchara"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AJhswThxEem9a8y9KhqXkw" name="palillo"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AJrdwDhxEem9a8y9KhqXkw" name="diaria"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AJrdwThxEem9a8y9KhqXkw" name="letargo"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__KIFQDhwEem9a8y9KhqXkw" name="Ingrediente" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__KRPMThwEem9a8y9KhqXkw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                  <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="__KkKIDhwEem9a8y9KhqXkw" name="defaultValue">
+                    <language>JAVA</language>
+                    <body>1L</body>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__KkKIThwEem9a8y9KhqXkw" name="idIngrediente" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__K3sIThwEem9a8y9KhqXkw" name="grupo" visibility="private" type="__lZE8DhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__LA2EDhwEem9a8y9KhqXkw" name="nombre" visibility="private" type="__CU0IDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__LKnEThwEem9a8y9KhqXkw" name="cantidadIngredientes" visibility="private" type="__LKnEDhwEem9a8y9KhqXkw" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__LKnEjhwEem9a8y9KhqXkw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__LUYEDhwEem9a8y9KhqXkw" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__LUYEjhwEem9a8y9KhqXkw" name="recetas" visibility="private" type="__LUYEThwEem9a8y9KhqXkw" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__LdiADhwEem9a8y9KhqXkw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__LdiAThwEem9a8y9KhqXkw" value="*"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__KRPMDhwEem9a8y9KhqXkw" name="Ingrediente implements Serializable" client="__KIFQDhwEem9a8y9KhqXkw" supplier="_-uzbMThwEem9a8y9KhqXkw" contract="_-uzbMThwEem9a8y9KhqXkw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__L6N8DhwEem9a8y9KhqXkw" name="Ingrediente" specification="__LdiAjhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Mgq4jhwEem9a8y9KhqXkw" name="Ingrediente" specification="__MD-8DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>/*, List&lt;Receta>recetas*/&#xD;
+&#xD;
+    this.grupo = grupo;&#xD;
+    this.nombre = nombre;&#xD;
+    this.cantidadIngredientes = cantidadIngredientes;&#xD;
+//		this.recetas= recetas;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Mp00jhwEem9a8y9KhqXkw" name="getIdIngrediente" specification="__Mp00DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return idIngrediente;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__M8vwDhwEem9a8y9KhqXkw" name="setIdIngrediente" specification="__Mzl0DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.idIngrediente = idIngrediente;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__NGgwThwEem9a8y9KhqXkw" name="getGrupo" specification="__M8vwThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return grupo;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__NZbsDhwEem9a8y9KhqXkw" name="setGrupo" specification="__NQRwDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.grupo = grupo;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__NjMsThwEem9a8y9KhqXkw" name="getNombre" specification="__NZbsThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return nombre;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__N2HoDhwEem9a8y9KhqXkw" name="setNombre" specification="__Ns9sDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.nombre = nombre;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__OJCkThwEem9a8y9KhqXkw" name="getCantidadIngredientes" specification="__N_4oDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return cantidadIngredientes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__OckkjhwEem9a8y9KhqXkw" name="setCantidadIngredientes" specification="__OSzkDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.cantidadIngredientes = cantidadIngredientes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__OvfgjhwEem9a8y9KhqXkw" name="getRecetas" specification="__OlugDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return recetas;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PCaczhwEem9a8y9KhqXkw" name="setRecetas" specification="__O5QgDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.recetas = recetas;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PVVYThwEem9a8y9KhqXkw" name="hashCode" specification="__PMLcDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    final int prime = 31;&#xD;
+    int result = 1;&#xD;
+    result = prime * result + ((cantidadIngredientes == null) ? 0 : cantidadIngredientes.hashCode());&#xD;
+    result = prime * result + ((grupo == null) ? 0 : grupo.hashCode());&#xD;
+    result = prime * result + ((idIngrediente == null) ? 0 : idIngrediente.hashCode());&#xD;
+    result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());&#xD;
+    result = prime * result + ((recetas == null) ? 0 : recetas.hashCode());&#xD;
+    return result;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Po3YThwEem9a8y9KhqXkw" name="equals" specification="__PfGYDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    if (this == obj)&#xD;
+        return true;&#xD;
+    if (obj == null)&#xD;
+        return false;&#xD;
+    if (getClass() != obj.getClass())&#xD;
+        return false;&#xD;
+    Ingrediente other = (Ingrediente) obj;&#xD;
+    if (cantidadIngredientes == null) {&#xD;
+        if (other.cantidadIngredientes != null)&#xD;
+            return false;&#xD;
+    } else if (!cantidadIngredientes.equals(other.cantidadIngredientes))&#xD;
+        return false;&#xD;
+    if (grupo != other.grupo)&#xD;
+        return false;&#xD;
+    if (idIngrediente == null) {&#xD;
+        if (other.idIngrediente != null)&#xD;
+            return false;&#xD;
+    } else if (!idIngrediente.equals(other.idIngrediente))&#xD;
+        return false;&#xD;
+    if (nombre == null) {&#xD;
+        if (other.nombre != null)&#xD;
+            return false;&#xD;
+    } else if (!nombre.equals(other.nombre))&#xD;
+        return false;&#xD;
+    if (recetas == null) {&#xD;
+        if (other.recetas != null)&#xD;
+            return false;&#xD;
+    } else if (!recetas.equals(other.recetas))&#xD;
+        return false;&#xD;
+    return true;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PyBUjhwEem9a8y9KhqXkw" name="toString" specification="__PyBUDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return &quot;Ingrediente [idIngrediente=&quot; + idIngrediente + &quot;, grupo=&quot; + grupo + &quot;, nombre=&quot; + nombre + &quot;, cantidadIngredientes=&quot; + cantidadIngredientes + &quot;, recetas=&quot; + recetas + &quot;]&quot;;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__LdiAjhwEem9a8y9KhqXkw" name="Ingrediente" visibility="public" method="__L6N8DhwEem9a8y9KhqXkw"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__MD-8DhwEem9a8y9KhqXkw" name="Ingrediente" visibility="public" method="__Mgq4jhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__MNI4ThwEem9a8y9KhqXkw" name="grupo" type="__lZE8DhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__MW54DhwEem9a8y9KhqXkw" name="nombre" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__MW54ThwEem9a8y9KhqXkw" name="cantidadIngredientes" type="__LKnEDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Mgq4DhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Mgq4ThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__Mp00DhwEem9a8y9KhqXkw" name="getIdIngrediente" visibility="public" method="__Mp00jhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Mp00ThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__Mzl0DhwEem9a8y9KhqXkw" name="setIdIngrediente" visibility="public" method="__M8vwDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Mzl0ThwEem9a8y9KhqXkw" name="idIngrediente">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__M8vwThwEem9a8y9KhqXkw" name="getGrupo" visibility="public" method="__NGgwThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__NGgwDhwEem9a8y9KhqXkw" type="__lZE8DhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__NQRwDhwEem9a8y9KhqXkw" name="setGrupo" visibility="public" method="__NZbsDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__NQRwThwEem9a8y9KhqXkw" name="grupo" type="__lZE8DhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__NZbsThwEem9a8y9KhqXkw" name="getNombre" visibility="public" method="__NjMsThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__NjMsDhwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__Ns9sDhwEem9a8y9KhqXkw" name="setNombre" visibility="public" method="__N2HoDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Ns9sThwEem9a8y9KhqXkw" name="nombre" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__N_4oDhwEem9a8y9KhqXkw" name="getCantidadIngredientes" visibility="public" method="__OJCkThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__N_4oThwEem9a8y9KhqXkw" type="__LKnEDhwEem9a8y9KhqXkw" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__N_4ojhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__OJCkDhwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__OSzkDhwEem9a8y9KhqXkw" name="setCantidadIngredientes" visibility="public" method="__OckkjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__OSzkThwEem9a8y9KhqXkw" name="cantidadIngredientes" type="__LKnEDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__OckkDhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__OckkThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__OlugDhwEem9a8y9KhqXkw" name="getRecetas" visibility="public" method="__OvfgjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__OlugThwEem9a8y9KhqXkw" type="__LUYEThwEem9a8y9KhqXkw" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__OvfgDhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__OvfgThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__O5QgDhwEem9a8y9KhqXkw" name="setRecetas" visibility="public" method="__PCaczhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__PCacDhwEem9a8y9KhqXkw" name="recetas" type="__LUYEThwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__PCacThwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__PCacjhwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__PMLcDhwEem9a8y9KhqXkw" name="hashCode" visibility="public" method="__PVVYThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__PVVYDhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__PfGYDhwEem9a8y9KhqXkw" name="equals" visibility="public" method="__Po3YThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__PfGYThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__Po3YDhwEem9a8y9KhqXkw" name="obj" type="__BbcQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__PyBUDhwEem9a8y9KhqXkw" name="toString" visibility="public" method="__PyBUjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__PyBUThwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="__lZE8DhwEem9a8y9KhqXkw" name="Grupo" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__mbmwjhwEem9a8y9KhqXkw" name="value" visibility="private" type="__CU0IDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__mqQQDhwEem9a8y9KhqXkw" name="Grupo" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__m0BQThwEem9a8y9KhqXkw" name="value" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__m9LMDhwEem9a8y9KhqXkw" name="getValue" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__m9LMThwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__li18DhwEem9a8y9KhqXkw" name="G1">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__li18ThwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Lacteos&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__lr_4DhwEem9a8y9KhqXkw" name="G2">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__lr_4ThwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Carnes, pescados y huevos&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__l1w4DhwEem9a8y9KhqXkw" name="G3">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__l1w4ThwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Tubérculos, legumbres, frutos secos&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__l1w4jhwEem9a8y9KhqXkw" name="G4">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__l1w4zhwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Verduras y Hortalizas&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__l-60DhwEem9a8y9KhqXkw" name="G5">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__l-60ThwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Frutas&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__mIr0DhwEem9a8y9KhqXkw" name="G6">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__mIr0ThwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Cereales y derivados, azúcar y dulces&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__mIr0jhwEem9a8y9KhqXkw" name="G7">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__mSc0DhwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Grasas, aceite y mantequilla&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__mSc0ThwEem9a8y9KhqXkw" name="G8">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__mSc0jhwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Agua y bebidas no alcohólicas&quot;</body>
+                  </specification>
+                </ownedLiteral>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__mbmwDhwEem9a8y9KhqXkw" name="G9">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="__mbmwThwEem9a8y9KhqXkw" name="specification">
+                    <language>JAVA</language>
+                    <body>&quot;Condimentos&quot;</body>
+                  </specification>
+                </ownedLiteral>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__LKnEDhwEem9a8y9KhqXkw" name="CantidadIngrediente" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__snuUThwEem9a8y9KhqXkw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                  <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="__s6pQDhwEem9a8y9KhqXkw" name="defaultValue">
+                    <language>JAVA</language>
+                    <body>1L</body>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__tEaQDhwEem9a8y9KhqXkw" name="idCantidadIngrediente" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__tEaQThwEem9a8y9KhqXkw" name="cantidad" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__tOLQThwEem9a8y9KhqXkw" name="si" visibility="private" type="__9dmsDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__tOLQjhwEem9a8y9KhqXkw" name="ingredientes" visibility="private" type="__KIFQDhwEem9a8y9KhqXkw" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__tXVMDhwEem9a8y9KhqXkw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__tXVMThwEem9a8y9KhqXkw" value="*"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__snuUDhwEem9a8y9KhqXkw" name="CantidadIngrediente implements Serializable" client="__LKnEDhwEem9a8y9KhqXkw" supplier="_-uzbMThwEem9a8y9KhqXkw" contract="_-uzbMThwEem9a8y9KhqXkw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__tq3MDhwEem9a8y9KhqXkw" name="CantidadIngrediente" specification="__tXVMjhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__uaeEzhwEem9a8y9KhqXkw" name="CantidadIngrediente" specification="__t9yIDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    super();&#xD;
+    this.cantidad = cantidad;&#xD;
+    this.si = si;&#xD;
+    this.ingredientes = ingredientes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__utZAThwEem9a8y9KhqXkw" name="getIdCantidadIngrediente" specification="__ujoADhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return idCantidadIngrediente;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__vAT8DhwEem9a8y9KhqXkw" name="setIdCantidadIngrediente" specification="__u3KADhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.idCantidadIngrediente = idCantidadIngrediente;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__vKE8ThwEem9a8y9KhqXkw" name="getCantidad" specification="__vAT8ThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return cantidad;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__vTO4jhwEem9a8y9KhqXkw" name="setCantidad" specification="__vTO4DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.cantidad = cantidad;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__vmw4DhwEem9a8y9KhqXkw" name="getSi" specification="__vc_4DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return si;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__vv60ThwEem9a8y9KhqXkw" name="setSi" specification="__vmw4ThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.si = si;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__wDc0jhwEem9a8y9KhqXkw" name="getIngredientes" specification="__v5r0DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return ingredientes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__wWXwjhwEem9a8y9KhqXkw" name="setIngredientes" specification="__wMmwDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.ingredientes = ingredientes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__wpSsDhwEem9a8y9KhqXkw" name="hashCode" specification="__wfhsDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    final int prime = 31;&#xD;
+    int result = 1;&#xD;
+    result = prime * result + cantidad;&#xD;
+    result = prime * result + idCantidadIngrediente;&#xD;
+    result = prime * result + ((ingredientes == null) ? 0 : ingredientes.hashCode());&#xD;
+    result = prime * result + ((si == null) ? 0 : si.hashCode());&#xD;
+    return result;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__w8NoDhwEem9a8y9KhqXkw" name="equals" specification="__wzDsDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    if (this == obj)&#xD;
+        return true;&#xD;
+    if (obj == null)&#xD;
+        return false;&#xD;
+    if (getClass() != obj.getClass())&#xD;
+        return false;&#xD;
+    CantidadIngrediente other = (CantidadIngrediente) obj;&#xD;
+    if (cantidad != other.cantidad)&#xD;
+        return false;&#xD;
+    if (idCantidadIngrediente != other.idCantidadIngrediente)&#xD;
+        return false;&#xD;
+    if (ingredientes == null) {&#xD;
+        if (other.ingredientes != null)&#xD;
+            return false;&#xD;
+    } else if (!ingredientes.equals(other.ingredientes))&#xD;
+        return false;&#xD;
+    if (si != other.si)&#xD;
+        return false;&#xD;
+    return true;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__xF-ojhwEem9a8y9KhqXkw" name="toString" specification="__xF-oDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return &quot;CantidadIngrediente [idCantidadIngrediente=&quot; + idCantidadIngrediente + &quot;, cantidad=&quot; + cantidad + &quot;, si=&quot; + si + &quot;, ingredientes=&quot; + ingredientes + &quot;]&quot;;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__tXVMjhwEem9a8y9KhqXkw" name="CantidadIngrediente" visibility="public" method="__tq3MDhwEem9a8y9KhqXkw"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__t9yIDhwEem9a8y9KhqXkw" name="CantidadIngrediente" visibility="public" method="__uaeEzhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__uG8EDhwEem9a8y9KhqXkw" name="cantidad">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__uQtEDhwEem9a8y9KhqXkw" name="si" type="__9dmsDhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__uaeEDhwEem9a8y9KhqXkw" name="ingredientes" type="__KIFQDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__uaeEThwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__uaeEjhwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ujoADhwEem9a8y9KhqXkw" name="getIdCantidadIngrediente" visibility="public" method="__utZAThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__utZADhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__u3KADhwEem9a8y9KhqXkw" name="setIdCantidadIngrediente" visibility="public" method="__vAT8DhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__u3KAThwEem9a8y9KhqXkw" name="idCantidadIngrediente">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__vAT8ThwEem9a8y9KhqXkw" name="getCantidad" visibility="public" method="__vKE8ThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__vKE8DhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__vTO4DhwEem9a8y9KhqXkw" name="setCantidad" visibility="public" method="__vTO4jhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__vTO4ThwEem9a8y9KhqXkw" name="cantidad">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__vc_4DhwEem9a8y9KhqXkw" name="getSi" visibility="public" method="__vmw4DhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__vc_4ThwEem9a8y9KhqXkw" type="__9dmsDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__vmw4ThwEem9a8y9KhqXkw" name="setSi" visibility="public" method="__vv60ThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__vv60DhwEem9a8y9KhqXkw" name="si" type="__9dmsDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__v5r0DhwEem9a8y9KhqXkw" name="getIngredientes" visibility="public" method="__wDc0jhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__v5r0ThwEem9a8y9KhqXkw" type="__KIFQDhwEem9a8y9KhqXkw" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__wDc0DhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__wDc0ThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__wMmwDhwEem9a8y9KhqXkw" name="setIngredientes" visibility="public" method="__wWXwjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__wMmwThwEem9a8y9KhqXkw" name="ingredientes" type="__KIFQDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__wWXwDhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__wWXwThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__wfhsDhwEem9a8y9KhqXkw" name="hashCode" visibility="public" method="__wpSsDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__wfhsThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__wzDsDhwEem9a8y9KhqXkw" name="equals" visibility="public" method="__w8NoDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__wzDsThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__wzDsjhwEem9a8y9KhqXkw" name="obj" type="__BbcQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__xF-oDhwEem9a8y9KhqXkw" name="toString" visibility="public" method="__xF-ojhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__xF-oThwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__LUYEThwEem9a8y9KhqXkw" name="Receta" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__nZ3IThwEem9a8y9KhqXkw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                  <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="__njoIDhwEem9a8y9KhqXkw" name="defaultValue">
+                    <language>JAVA</language>
+                    <body>1L</body>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__njoIThwEem9a8y9KhqXkw" name="idReceta" visibility="private" isUnique="false">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__ntZIDhwEem9a8y9KhqXkw" name="nombre" visibility="private" type="__CU0IDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__n2jEDhwEem9a8y9KhqXkw" name="descripcion" visibility="private" type="__CU0IDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__n2jEThwEem9a8y9KhqXkw" name="ingredietes" visibility="private" type="__KIFQDhwEem9a8y9KhqXkw" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__oAUEDhwEem9a8y9KhqXkw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__oAUEThwEem9a8y9KhqXkw" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__oJeADhwEem9a8y9KhqXkw" name="tapa" visibility="private" type="_-7UNMDhwEem9a8y9KhqXkw" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__nZ3IDhwEem9a8y9KhqXkw" name="Receta implements Serializable" client="__LUYEThwEem9a8y9KhqXkw" supplier="_-uzbMThwEem9a8y9KhqXkw" contract="_-uzbMThwEem9a8y9KhqXkw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__odAAThwEem9a8y9KhqXkw" name="Receta" specification="__oTPADhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__pC14ThwEem9a8y9KhqXkw" name="Receta" specification="__omJ8DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    super();&#xD;
+    this.nombre = nombre;&#xD;
+    this.descripcion = descripcion;&#xD;
+    //		this.ingredietes = ingredietes;&#xD;
+    this.tapa = tapa;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__pMm4jhwEem9a8y9KhqXkw" name="getIdReceta" specification="__pMm4DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return idReceta;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__pfh0ThwEem9a8y9KhqXkw" name="setIdReceta" specification="__pVw0DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.idReceta = idReceta;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__pycwDhwEem9a8y9KhqXkw" name="getNombre" specification="__ppS0DhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return nombre;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__p8NwThwEem9a8y9KhqXkw" name="setNombre" specification="__pycwThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.nombre = nombre;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__qF-wjhwEem9a8y9KhqXkw" name="getDescripcion" specification="__qF-wDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return descripcion;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__qY5sThwEem9a8y9KhqXkw" name="setDescripcion" specification="__qPIsDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.descripcion = descripcion;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__qr0ojhwEem9a8y9KhqXkw" name="getIngredietes" specification="__qiDoDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return ingredietes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__q-vkDhwEem9a8y9KhqXkw" name="setIngredietes" specification="__q1loDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.ingredietes = ingredietes;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__rIgkjhwEem9a8y9KhqXkw" name="getTapa" specification="__rIgkDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return tapa;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__rbbgDhwEem9a8y9KhqXkw" name="Tapa" specification="__rSRkDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.tapa = tapa;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__rlMgjhwEem9a8y9KhqXkw" name="hashCode" specification="__rlMgDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    final int prime = 31;&#xD;
+    int result = 1;&#xD;
+    result = prime * result + idReceta;&#xD;
+    return result;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__sB4cDhwEem9a8y9KhqXkw" name="equals" specification="__ruWcDhwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    if (this == obj)&#xD;
+        return true;&#xD;
+    if (obj == null)&#xD;
+        return false;&#xD;
+    if (getClass() != obj.getClass())&#xD;
+        return false;&#xD;
+    Receta other = (Receta) obj;&#xD;
+    if (idReceta != other.idReceta)&#xD;
+        return false;&#xD;
+    return true;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__sLCYThwEem9a8y9KhqXkw" name="toString" specification="__sB4cThwEem9a8y9KhqXkw">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return &quot;Receta [idReceta=&quot; + idReceta + &quot;, nombre=&quot; + nombre + &quot;, descripcion=&quot; + descripcion + &quot;, ingredietes=&quot; + ingredietes + &quot;, tapa=&quot; + tapa + &quot;]&quot;;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__oTPADhwEem9a8y9KhqXkw" name="Receta" visibility="public" method="__odAAThwEem9a8y9KhqXkw"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__omJ8DhwEem9a8y9KhqXkw" name="Receta" visibility="public" method="__pC14ThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__o5r8DhwEem9a8y9KhqXkw" name="nombre" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__o5r8ThwEem9a8y9KhqXkw" name="descripcion" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pC14DhwEem9a8y9KhqXkw" name="tapa" type="_-7UNMDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pMm4DhwEem9a8y9KhqXkw" name="getIdReceta" visibility="public" method="__pMm4jhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pMm4ThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pVw0DhwEem9a8y9KhqXkw" name="setIdReceta" visibility="public" method="__pfh0ThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pfh0DhwEem9a8y9KhqXkw" name="idReceta">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ppS0DhwEem9a8y9KhqXkw" name="getNombre" visibility="public" method="__pycwDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__ppS0ThwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pycwThwEem9a8y9KhqXkw" name="setNombre" visibility="public" method="__p8NwThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p8NwDhwEem9a8y9KhqXkw" name="nombre" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qF-wDhwEem9a8y9KhqXkw" name="getDescripcion" visibility="public" method="__qF-wjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qF-wThwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qPIsDhwEem9a8y9KhqXkw" name="setDescripcion" visibility="public" method="__qY5sThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qY5sDhwEem9a8y9KhqXkw" name="descripcion" type="__CU0IDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qiDoDhwEem9a8y9KhqXkw" name="getIngredietes" visibility="public" method="__qr0ojhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qiDoThwEem9a8y9KhqXkw" type="__KIFQDhwEem9a8y9KhqXkw" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__qr0oDhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__qr0oThwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__q1loDhwEem9a8y9KhqXkw" name="setIngredietes" visibility="public" method="__q-vkDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__q1loThwEem9a8y9KhqXkw" name="ingredietes" type="__KIFQDhwEem9a8y9KhqXkw">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__q1lojhwEem9a8y9KhqXkw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__q1lozhwEem9a8y9KhqXkw" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__rIgkDhwEem9a8y9KhqXkw" name="getTapa" visibility="public" method="__rIgkjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__rIgkThwEem9a8y9KhqXkw" type="_-7UNMDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__rSRkDhwEem9a8y9KhqXkw" name="Tapa" visibility="public" method="__rbbgDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__rSRkThwEem9a8y9KhqXkw" name="tapa" type="_-7UNMDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__rlMgDhwEem9a8y9KhqXkw" name="hashCode" visibility="public" method="__rlMgjhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__rlMgThwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ruWcDhwEem9a8y9KhqXkw" name="equals" visibility="public" method="__sB4cDhwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__r4HcDhwEem9a8y9KhqXkw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__r4HcThwEem9a8y9KhqXkw" name="obj" type="__BbcQDhwEem9a8y9KhqXkw"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__sB4cThwEem9a8y9KhqXkw" name="toString" visibility="public" method="__sLCYThwEem9a8y9KhqXkw">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__sLCYDhwEem9a8y9KhqXkw" type="__CU0IDhwEem9a8y9KhqXkw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="__9dmsDhwEem9a8y9KhqXkw" name="SistemaInternacionalUnidades" visibility="public">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9mwoDhwEem9a8y9KhqXkw" name="Kg"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9mwoThwEem9a8y9KhqXkw" name="g"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9mwojhwEem9a8y9KhqXkw" name="L"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9mwozhwEem9a8y9KhqXkw" name="ml"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9mwpDhwEem9a8y9KhqXkw" name="caja"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9whoDhwEem9a8y9KhqXkw" name="unidad"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__9whoThwEem9a8y9KhqXkw" name="otros"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-upqMDhwEem9a8y9KhqXkw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-upqMThwEem9a8y9KhqXkw" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-uzbMDhwEem9a8y9KhqXkw" name="io">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-uzbMThwEem9a8y9KhqXkw" name="Serializable"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="__BRrQDhwEem9a8y9KhqXkw" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="__BbcQDhwEem9a8y9KhqXkw" name="Object"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="__CU0IDhwEem9a8y9KhqXkw" name="String"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="__D0B5DhwEem9a8y9KhqXkw" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="__D9y4DhwEem9a8y9KhqXkw" name="Date"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-p4e8DhwEem9a8y9KhqXkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-qCP8DhwEem9a8y9KhqXkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-rrOsDhwEem9a8y9KhqXkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-rrOsThwEem9a8y9KhqXkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-r0YoDhwEem9a8y9KhqXkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-r0YoThwEem9a8y9KhqXkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_-5PJkDhwEem9a8y9KhqXkw" name="java.io.Serializable" base_Classifier="_-uzbMThwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="_-8NlEDhwEem9a8y9KhqXkw" base_BehavioralFeature="_-76qIDhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="_-9G88DhwEem9a8y9KhqXkw" base_BehavioralFeature="_-89L8DhwEem9a8y9KhqXkw"/>
+  <PapyrusJava:External xmi:id="__BlNQDhwEem9a8y9KhqXkw" name="java.lang.Object" base_Classifier="__BbcQDhwEem9a8y9KhqXkw"/>
+  <PapyrusJava:External xmi:id="__Cd-EDhwEem9a8y9KhqXkw" name="java.lang.String" base_Classifier="__CU0IDhwEem9a8y9KhqXkw"/>
+  <PapyrusJava:External xmi:id="__EG80DhwEem9a8y9KhqXkw" name="java.util.Date" base_Classifier="__D9y4DhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__E2jsDhwEem9a8y9KhqXkw" base_BehavioralFeature="__EtZwDhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__FdAoDhwEem9a8y9KhqXkw" base_BehavioralFeature="__FKFsDhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__Lwc8DhwEem9a8y9KhqXkw" base_BehavioralFeature="__LdiAjhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__MNI4DhwEem9a8y9KhqXkw" base_BehavioralFeature="__MD-8DhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__m0BQDhwEem9a8y9KhqXkw" base_BehavioralFeature="__mqQQDhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__odAADhwEem9a8y9KhqXkw" base_BehavioralFeature="__oTPADhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__ov68DhwEem9a8y9KhqXkw" base_BehavioralFeature="__omJ8DhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__thGMDhwEem9a8y9KhqXkw" base_BehavioralFeature="__tXVMjhwEem9a8y9KhqXkw"/>
+  <standard:Create xmi:id="__t9yIThwEem9a8y9KhqXkw" base_BehavioralFeature="__t9yIDhwEem9a8y9KhqXkw"/>
+</xmi:XMI>
