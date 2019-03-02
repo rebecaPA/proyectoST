@@ -14,7 +14,15 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
+/*
+ * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	 	18/02/2019
+ * 										  
+ * Comentario: 
+ * 
+ * 
+ */
 @Entity
 public class Receta implements Serializable {
 

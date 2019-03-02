@@ -12,6 +12,15 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+/*
+ * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	28/2/2019
+ * 										  
+ * Comentario: 
+ * 		entidad que gestiona los datos que son distintos en cada empresa  
+ * 
+ */
 @Entity
 public class DatosEmpresa implements Serializable {
 
@@ -139,6 +148,4 @@ public class DatosEmpresa implements Serializable {
 	}
 	
 	
-	
-
 }

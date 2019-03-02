@@ -17,12 +17,17 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-/**
- *
- * @author rebeca pena alvarez
- * 18/01/2019
- *  elemento minimo  para realizar la tapa,   que tiene en el almacen
+/*
+ * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	18/01/2019
+ * 										  
+ * Comentario: 
+ * 
+ *  
+ * 
  */
+
 @Entity
 public class Ingrediente implements Serializable {
     private static final long serialVersionUID = 1L;

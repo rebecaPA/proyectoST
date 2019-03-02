@@ -26,9 +26,15 @@ import javax.persistence.Temporal;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-/**
- *
- * @author dawa44 
+/*
+ * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	02/08/2019
+ * 										  
+ * Comentario: 
+ * 
+ *  
+ * 
  */
 @Entity
 public class Tapa implements Serializable {

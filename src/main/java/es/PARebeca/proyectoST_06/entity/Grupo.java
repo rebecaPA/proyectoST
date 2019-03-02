@@ -5,13 +5,14 @@
  */
 package es.PARebeca.proyectoST_06.entity;
 
-
-/**
- *
- * > rebeca pena alvarez 
- * > 02/02/2019
- * > modo de agrupar los alimentos
+/*
  * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	02/02/2019
+ * 										  
+ * Comentario: 
+ * modo en que se agrupan los alimentos, para su mejor organización
+ *  
  */
 public enum Grupo {
     

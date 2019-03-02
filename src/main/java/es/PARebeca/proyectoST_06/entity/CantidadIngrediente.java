@@ -15,12 +15,16 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
-/**
-*
-* @author rebeca pena alvarez
-* 09/02/2019
-* entidad encargada de hacer la lista de ingredientes de cada receta
-*/
+/*
+ * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	9/2/2019
+ * 										  
+ * Comentario: 
+ * 
+ *  encargada de hacer la lista de ingredientes de cada receta
+ * 
+ */
 @Entity
 public class CantidadIngrediente implements Serializable {
 

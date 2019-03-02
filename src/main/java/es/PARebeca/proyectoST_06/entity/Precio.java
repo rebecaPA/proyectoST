@@ -19,12 +19,15 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.Max;
 
-/**
-*
-* @author rebeca pena alvarez
-* 18/01/2019
-* 
-*/
+/*
+ * 
+ * Autora:									Fecha:
+ * 		rebeca pena alvarez			|   	 	18/02/2019
+ * 										  
+ * Comentario: 
+ * 
+ * 
+ */
 @Entity
 public class Precio implements Serializable {
 
