@@ -19,7 +19,7 @@ import es.PARebeca.proyectoST_06.service.interfaces.Services;
  * 
  * 
  */
-@Controller("/crudIngredientes")
+//@Controller("/crudIngredientes")
 public class CRUDIngredientes {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(CRUDIngredientes.class);

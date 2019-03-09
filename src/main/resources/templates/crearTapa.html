@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/general.css" th:href="@{/css/general.css}" />
+  </head>
+
+  <body class="filaCentrado">
+  
+    <h2  th:text="#{crearTapa}"></h2>
+    <form th:action="@{/tapa/crear}" method="post" th:object="${tapaModel}" class="form">
+			
+
+			<input th:if="${tapaModel.idTapa != null} " type="text" id="idTapa" name="idTapa" th:value="${tapaModel.idTapa}" hidden />
+		
+		
+		
+		<fieldset>
+			<legend th:text="#{nombre} + ':'"></legend>
+			<input type="text" id="nombre" name="nombre" th:value="${tapaModel.nombre}" th:placeholder="#{index.placeholder.required}"  maxlength="50" required autofocus />
+<!-- 			<div class="msmhiden" th:utext="#{patterdasid}"></div> -->
+		</fieldset>
+		<p th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}" class="errorlabel"></p>
+		
+		<fieldset >
+			<legend th:text="#{legend.tipo}"> </legend>
+<!-- 			<div class="msmhiden" th:utext="#{required}"></div> -->
+			<select  th:field="*{{tipo}}" required>
+<!-- 				<option th:each="t : ${tipo}" th:value="${t}" th:text="${t}"> -->
+				<option  th:value="#{cuchara}" th:text="#{cuchara}" selected>
+				<option  th:value="#{palillo}" th:text="#{palillo}">
+				<option  th:value="#{diaria}" th:text="#{diaria}">
+				<option  th:value="#{letargo}" th:text="#{letargo}">
+			</select>
+		</fieldset>
+		
+		<div class="boton">
+			<button type="submit" th:text="#{crear }"></button>
+		
+			<button type="reset"> <img th:src="@{/imgs/rubber.png}"/></button>
+		</div>
+		
+	</form>
+  
+  </body>
+</html>

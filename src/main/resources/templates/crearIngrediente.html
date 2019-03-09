@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${sesión.DatosEmpresa.nombre} != null ? ${sesión.DatosEmpresa.nombre} "> Sorteo Tapas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/nombre.css" th:href="@{/css/st.css}" />
+  </head>
+
+  <body>
+    
+    <form th:action="@{/otroIngrediente}" method="post" th:object="${ingredienteModel}" id="${ingrediente.form}" name="${ingrediente.form}">
+
+		<fieldset>
+			<legend th:text="#{nombre} + ':'"></legend>
+			<input type="text" id="nombre" name="nombre"
+				th:value="${ingredienteModel.nombre}" pattern="[\w]{2,}" required autofocus />
+			<div class="msmhiden" th:utext="#{patternombre}"></div>
+		</fieldset>
+		<p th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}" class="errorlabel"></p>
+		
+<!-- 		union con tabla cantidadIngrediente -->
+		<fieldset>
+			<legend th:text="#{cantidad} + ':'"></legend>
+			<input type="text" id="cantidad" name="cantidad" th:value="${ingredienteModel.cantidad}"   />
+			poner al lado un select con SistemaInternacionalUnidades
+			<select></select>
+			<div class="msmhiden" th:utext="#{pattercantidad}"></div>
+		</fieldset>
+		<p th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}" class="errorlabel"></p>
+		
+		<button type="submit" th:text="#{crear ingrediente}"></button>
+		
+		<button type="reset"> <img th:src="@{/imgs/rubber.png}"/></button>
+	</form>
+  
+  </body>
+</html>

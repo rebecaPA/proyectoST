@@ -17,5 +17,5 @@ import es.PARebeca.proyectoST_06.entity.Ingrediente;
  */
 public interface IngredienteRepository extends CrudRepository<Ingrediente, Serializable> {
 
-	public abstract Ingrediente findIngredienteByIngrediente(Long idIngrediente);
+	//public abstract Ingrediente findIngredienteByIngrediente(Long idIngrediente);
 }

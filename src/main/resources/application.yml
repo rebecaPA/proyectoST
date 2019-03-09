@@ -13,4 +13,26 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
- 
+ # para poder hacer cambios en el html y probarlos sin tener que reiniciar el servidor, sólo para pruebas //BRM      
+  thymeleaf:
+    cache: false
+    mode: HTML5
+  
+# Ficheros de internacionalizacion y localizacion //BRM
+  messages:
+    basename: i18n/literales,i18n/errors,i18n/literalesTapas
+    encoding: UTF-8
+    
+# Configurar logging //BRM
+  output:
+    ansi:
+      enabled: DETECT
+logging:
+  path: logs
+  file: ${logging.path}/proyectoST.log
+  level:
+    org:
+      springframework:
+        web: WARN
+      hibernate: WARN
+      

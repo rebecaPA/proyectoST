@@ -2,11 +2,15 @@ package es.PARebeca.proyectoST_06.entity;
 
 import java.awt.Image;
 import java.io.Serializable;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -47,8 +51,34 @@ public class DatosEmpresa implements Serializable {
 	@Max(value = 31)
 	private int numeroDiasASortear;
 	
-	private Image logo;
+	@Lob
+	private byte logo;
 
+	@OneToMany(cascade = CascadeType.MERGE, mappedBy="datosEmpresa")
+	private List<Receta> recetas;
+	
+	
+	// --- consturctores ---\\
+	
+	public DatosEmpresa() {
+	
+	}
+
+	
+	public DatosEmpresa(@NotNull @NotBlank String nombre, @Min(1) @Max(100) int numeroTapasSorteoPalillo,
+			@Min(1) @Max(100) int numeroTapasSorteoCuchara, @Min(1) @Max(31) int numeroDiasASortear, byte logo,
+			List<Receta> recetas) {
+		super();
+		Nombre = nombre;
+		this.numeroTapasSorteoPalillo = numeroTapasSorteoPalillo;
+		this.numeroTapasSorteoCuchara = numeroTapasSorteoCuchara;
+		this.numeroDiasASortear = numeroDiasASortear;
+		this.logo = logo;
+		this.recetas = recetas;
+	}
+
+	// --- get & set ---\\
+	
 	public int getIdDatosEmpresa() {
 		return idDatosEmpresa;
 	}
@@ -89,11 +119,11 @@ public class DatosEmpresa implements Serializable {
 		this.numeroDiasASortear = numeroDiasASortear;
 	}
 
-	public Image getLogo() {
+	public byte getLogo() {
 		return logo;
 	}
 
-	public void setLogo(Image logo) {
+	public void setLogo(byte logo) {
 		this.logo = logo;
 	}
 
@@ -101,7 +131,7 @@ public class DatosEmpresa implements Serializable {
 	public String toString() {
 		return "DatosEmpresa [idDatosEmpresa=" + idDatosEmpresa + ", Nombre=" + Nombre + ", numeroTapasSorteoPalillo="
 				+ numeroTapasSorteoPalillo + ", numeroTapasSorteoCuchara=" + numeroTapasSorteoCuchara
-				+ ", numeroDiasASortear=" + numeroDiasASortear + ", logo=" + logo + "]";
+				+ ", numeroDiasASortear=" + numeroDiasASortear + ", logo=" + logo + ", recetas=" + recetas + "]";
 	}
 
 	@Override
@@ -110,10 +140,11 @@ public class DatosEmpresa implements Serializable {
 		int result = 1;
 		result = prime * result + ((Nombre == null) ? 0 : Nombre.hashCode());
 		result = prime * result + idDatosEmpresa;
-		result = prime * result + ((logo == null) ? 0 : logo.hashCode());
+		result = prime * result + logo;
 		result = prime * result + numeroDiasASortear;
 		result = prime * result + numeroTapasSorteoCuchara;
 		result = prime * result + numeroTapasSorteoPalillo;
+		result = prime * result + ((recetas == null) ? 0 : recetas.hashCode());
 		return result;
 	}
 
@@ -133,10 +164,7 @@ public class DatosEmpresa implements Serializable {
 			return false;
 		if (idDatosEmpresa != other.idDatosEmpresa)
 			return false;
-		if (logo == null) {
-			if (other.logo != null)
-				return false;
-		} else if (!logo.equals(other.logo))
+		if (logo != other.logo)
 			return false;
 		if (numeroDiasASortear != other.numeroDiasASortear)
 			return false;
@@ -144,8 +172,19 @@ public class DatosEmpresa implements Serializable {
 			return false;
 		if (numeroTapasSorteoPalillo != other.numeroTapasSorteoPalillo)
 			return false;
+		if (recetas == null) {
+			if (other.recetas != null)
+				return false;
+		} else if (!recetas.equals(other.recetas))
+			return false;
 		return true;
 	}
+
+	
+	
+
+	
+
 	
 	
 }

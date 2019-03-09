@@ -58,26 +58,13 @@ public class Tapa implements Serializable {
     private Date fecha;
     private boolean servida;
     
-//    @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.LAZY, mappedBy= "tapa")
-//    private List<Receta> recetas;
-//    
+    @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.LAZY, mappedBy= "tapa")
+    private List<Receta> recetas;
+    
     
    
     
-    //entidad propietaria de la relacion 
-//    @ManyToMany(cascade = {CascadeType.MERGE})
-//    @JoinTable(
-//    		//monbre de la tabla de union 
-//            name = "tapaIngrediente",
-//            joinColumns = { //nombre columna de tabal union, nombre c tabla Tapa
-//                @JoinColumn(name = "idTapa", referencedColumnName = "idTapa")
-//            },
-//            inverseJoinColumns = {
-//                @JoinColumn (name = "idIngrediente",referencedColumnName = "idIngrediente")
-//            }
-//    )
-//    private List<Ingrediente> ingredientes;
-//    
+   
     @ManyToOne
     //name es el nombre de la clave foranea
     @JoinColumn(name="idprecio")
@@ -95,14 +82,14 @@ public class Tapa implements Serializable {
    
 
  
-   public Tapa(Tipo tipo, @NotBlank @Size(max = 50) String nombre, Date fecha, boolean servida,/* List<Receta> recetas,*/
+   public Tapa(Tipo tipo, @NotBlank @Size(max = 50) String nombre, Date fecha, boolean servida, List<Receta> recetas,
 			Precio precios) {
 		super();
 		this.tipo = tipo;
 		this.nombre = nombre;
 		this.fecha = new Date();
 		this.servida = false;
-//		this.recetas = recetas;
+		this.recetas = recetas;
 		this.precios = precios;
 	}
 
