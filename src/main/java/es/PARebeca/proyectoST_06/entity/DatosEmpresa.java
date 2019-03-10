@@ -15,6 +15,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /*
  * 
@@ -36,6 +37,7 @@ public class DatosEmpresa implements Serializable {
 	
 	@NotNull
 	@NotBlank
+	@Size(min=1, max=80)
 	private String Nombre;
 	
 	@Min(value = 1)
@@ -181,8 +183,6 @@ public class DatosEmpresa implements Serializable {
 	}
 
 	
-	
-
 	
 
 	

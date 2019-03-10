@@ -19,14 +19,13 @@ public class PrecioModel {
 
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @Basic(optional = false)
+   
+  
     private Long idPrecio;
    
-    @OneToMany(cascade = CascadeType.MERGE, mappedBy="precios")
+   
     private List<Tapa> tapas;
-    
-    @Max(4)
+   
     private int precio, pvp;
     
     // --- constructores ---  \\
@@ -35,13 +34,7 @@ public class PrecioModel {
 		
 	}
     
-    public PrecioModel( List<Tapa> tapas, @Max(4) int precio, @Max(4) int pvp) {
-		
-		this.tapas = tapas;
-		this.precio = precio;
-		this.pvp = pvp;
-	}
-    
+   
 
     // ---  get & set ---  \\
 

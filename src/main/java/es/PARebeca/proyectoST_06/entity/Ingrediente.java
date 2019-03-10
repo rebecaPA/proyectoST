@@ -39,6 +39,7 @@ public class Ingrediente implements Serializable {
 
     
     //modo de agrupar los ingredientes 
+    @Size(max= 40)
     @Enumerated (EnumType.STRING)
     private Grupo grupo;
    

@@ -34,13 +34,13 @@ public class CRUDTapaControler {
 //	@Qualifier("precioService")
 	private Services <Precio, PrecioModel> servicioP;
 	
-	@GetMapping("/datos")
+	@GetMapping("tapa/datos")
 	private String crear(Model model)
 	{
 		
 	//	if(model==null) {//hay q pasar las tablas relacionadas
 			model.addAttribute("tapaModel", new TapaModel());
-			LOG.info("--  insertar datos para la creación de una tapa ");
+			LOG.info("--  insertar datos para la creación de una tapa " + model.toString());
 //		}
 //		else {
 //			LOG.info("--  insertar datos para la modificacion de una tapa ");
@@ -49,7 +49,7 @@ public class CRUDTapaControler {
 		return Constantes.CREAR_TAPA;
 	}
 	
-	@GetMapping("/crear")
+	@GetMapping("tapa/crear")
 	public ModelAndView crear(@Valid @ModelAttribute(name="tapaModel") TapaModel tm, Model model,BindingResult result ) {
 		LOG.info("--  crear tapa " + tm.toString());
 		ModelAndView mav = new ModelAndView(Constantes.LISTAR_TAPA);

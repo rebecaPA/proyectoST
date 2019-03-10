@@ -21,25 +21,16 @@ public class TapaModel {
 	 private static final long serialVersionUID = 1L;
 	    
 	    
-	    @Column (name = "idTapa")
+	   
 	    private Long idTapa;
 	    
-	    //antes Condicion 
-	    @Enumerated
 	    private Tipo tipo;
-	    
-	    @NotBlank
-	    @Size(max=50)
+	  
 	    private String nombre;
-	    
-	    @Temporal(javax.persistence.TemporalType.DATE)
+
 	    private Date fecha;
 	    private boolean servida;
 	    
-    
-	    @ManyToOne
-	    //name es el nombre de la clave foranea
-	    @JoinColumn(name="idprecio")
 	    private Precio precios;   
 	    
 	    
@@ -52,17 +43,7 @@ public class TapaModel {
 	    public TapaModel() {
 			
 		}
-	    public TapaModel(Tipo tipo, @NotBlank @Size(max = 50) String nombre, Date fecha, boolean servida,
-				Precio precios) {
-			super();
-			this.tipo = tipo;
-			this.nombre = nombre;
-			this.fecha = fecha;
-			this.servida = servida;
-			this.precios = precios;
-		}
-
-
+	   
 
 	//////
 	    
@@ -179,11 +160,5 @@ public class TapaModel {
 					+ servida + /* ", recetas=" + recetas +  */ ", precios=" + precios + "]";
 		}
 	    
-
-//	    @Override
-//	    public String toString() {
-//	        return "rebecaPA.proyectoST_06.entity.Tapa[ id=" + idTapa + " ]";
-//	    }
-	//    
 
 }

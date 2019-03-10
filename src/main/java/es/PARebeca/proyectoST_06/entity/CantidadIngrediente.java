@@ -55,6 +55,9 @@ public class CantidadIngrediente implements Serializable {
             }
    		)
 	private List<Ingrediente> ingredientes ;
+	
+	
+	
 
 	public CantidadIngrediente() {
 	

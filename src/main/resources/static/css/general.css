@@ -74,6 +74,8 @@ button:hover{
 }
 
 input , select{
+	
+	text-indent:0.5rem;
 	transition: box-shadow 0.8s, border-radius 0.9s,border-color 0.8s ease 0.2s;
 	
 	-webkit-box-shadow: 4px 2px 2px 1px #888888 inset;

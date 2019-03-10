@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- 	fragmento de la cabecera, con el logo de empresa y nombre-->
+	<nav th:fragment="nav">
+		<ul>
+  			<li th:text="#{iniciar.Sorteo}"></li>
+  			<li th:text="#{tapas}">
+  				<ul>
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>	
+  			</li>
+  			<li th:text="#{recetas}">
+  				<ul>
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>
+  			</li>
+  			<li th:text="#{ingredientes}">
+  				<ul>
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>
+  			</li>
+  			<li th:text="#{precios}">
+  				<ul>
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>
+  			</li>
+  		</ul>
+	</nav>
+	
+
+
+</body>
