@@ -4,3 +4,71 @@
 2019-03-10 05:00:27.789  INFO 1104 --- [RMI TCP Connection(316)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-03-10 05:00:27.914  INFO 1104 --- [RMI TCP Connection(316)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-03-10 05:00:27.930  INFO 1104 --- [RMI TCP Connection(316)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-10 20:55:53.406  INFO 2316 --- [main] es.PARebeca.proyectoST_06.Application    : Starting Application on DESKTOP-NKP6N0K with PID 2316 (C:\Users\aarfa\Documents\Workspace-sts-3.9.7.RELEASE\proyectoST_0.6\target\classes started by aarfa in C:\Users\aarfa\Documents\Workspace-sts-3.9.7.RELEASE\proyectoST_0.6)
+2019-03-10 20:55:53.420  INFO 2316 --- [main] es.PARebeca.proyectoST_06.Application    : No active profile set, falling back to default profiles: default
+2019-03-10 20:55:55.875  INFO 2316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:55:56.125  INFO 2316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 226ms. Found 2 repository interfaces.
+2019-03-10 20:55:57.415  INFO 2316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c9be40ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-10 20:55:58.448  INFO 2316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-10 20:55:58.546  INFO 2316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-10 20:55:58.550  INFO 2316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-10 20:55:58.578  INFO 2316 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\apache-maven-3.5.4\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\WINDOWS\System32\OpenSSH\;C:\Users\aarfa\AppData\Local\Microsoft\WindowsApps;C:\Users\aarfa\AppData\Local\Programs\Git\cmd;C:\Users\aarfa\Desktop\sts-bundle\sts-3.9.7.RELEASE;;.]
+2019-03-10 20:55:59.163  INFO 2316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-10 20:55:59.692  INFO 2316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-10 20:56:00.056  INFO 2316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-10 20:56:05.693  INFO 2316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-10 20:56:07.159  WARN 2316 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'proyectoST/*' defined in file [C:\Users\aarfa\Documents\Workspace-sts-3.9.7.RELEASE\proyectoST_0.6\target\classes\es\PARebeca\proyectoST_06\controler\sorteoControler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [es.PARebeca.proyectoST_06.controler.sorteoControler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+	Syntax error, insert "EnumBody" to complete EnumDeclaration
+
+2019-03-10 20:56:07.164  INFO 2316 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-10 20:56:07.192  INFO 2316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-10 20:56:07.219  INFO 2316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-10 20:56:07.224  INFO 2316 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-10 20:56:07.280  INFO 2316 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-10 20:56:07.355 ERROR 2316 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'proyectoST/*' defined in file [C:\Users\aarfa\Documents\Workspace-sts-3.9.7.RELEASE\proyectoST_0.6\target\classes\es\PARebeca\proyectoST_06\controler\sorteoControler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [es.PARebeca.proyectoST_06.controler.sorteoControler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+	Syntax error, insert "EnumBody" to complete EnumDeclaration
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1270) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at es.PARebeca.proyectoST_06.Application.main(Application.java:12) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [es.PARebeca.proyectoST_06.controler.sorteoControler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+	Syntax error, insert "EnumBody" to complete EnumDeclaration
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1262) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+	Syntax error, insert "EnumBody" to complete EnumDeclaration
+
+	at es.PARebeca.proyectoST_06.controler.sorteoControler.<init>(sorteoControler.java:22) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_181]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 19 common frames omitted
+

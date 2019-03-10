@@ -18,7 +18,7 @@ public class IngredienteModel {
 	    private String nombre;
 	     
 	    
-	    private List<CantidadIngrediente> cantidadIngredientes;
+	    private List<CantidadIngredienteModel> cantidadIngredientes;
 	   
 	   
 	    private List<Receta> recetas;
@@ -31,7 +31,8 @@ public class IngredienteModel {
 	    }
 
 	    
-	// get set
+	    
+		// get set
 
 		public Long getIdIngrediente() {
 			return idIngrediente;
@@ -62,21 +63,27 @@ public class IngredienteModel {
 			this.nombre = nombre;
 		}
 
-		public List<CantidadIngrediente> getCantidadIngredientes() {
+
+		public List<CantidadIngredienteModel> getCantidadIngredientes() {
 			return cantidadIngredientes;
 		}
 
-		public void setCantidadIngredientes(List<CantidadIngrediente> cantidadIngredientes) {
+
+		public void setCantidadIngredientes(List<CantidadIngredienteModel> cantidadIngredientes) {
 			this.cantidadIngredientes = cantidadIngredientes;
 		}
+
 
 		public List<Receta> getRecetas() {
 			return recetas;
 		}
 
+
 		public void setRecetas(List<Receta> recetas) {
 			this.recetas = recetas;
 		}
-		
 
+	
+
+		
 }

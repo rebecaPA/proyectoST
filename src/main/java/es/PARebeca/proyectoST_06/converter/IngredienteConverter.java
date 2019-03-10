@@ -1,6 +1,7 @@
 package es.PARebeca.proyectoST_06.converter;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -29,18 +30,26 @@ public class IngredienteConverter implements Converter<Ingrediente, IngredienteM
 		model.setNombre(entity.getNombre());
 		model.setRecetas(entity.getRecetas());
 		
-		List<CantidadIngredienteModel> cantidadIngredientes = new ArrayList<>();
+		List<CantidadIngredienteModel> cantidadIngredientes = new ArrayList<CantidadIngredienteModel>();
 		CantidadIngredienteModel cimodel = new CantidadIngredienteModel();
 		
-		for(CantidadIngrediente ci : entity.getCantidadIngredientes()) {
-			
-			cimodel.setCantidad(ci.getCantidad());
-			cimodel.setIdCantidadIngrediente(ci.getCantidad());
-			cimodel.setSi(ci.getSi());
-			
-			cantidadIngredientes.addAll(cimodel);
+		if(entity.getCantidadIngredientes().get(0).getIdCantidadIngrediente()!=0) {
+			for(CantidadIngrediente ci : entity.getCantidadIngredientes()) {
+				
+				cimodel.setCantidad(ci.getCantidad());
+				cimodel.setIdCantidadIngrediente(ci.getCantidad());
+				cimodel.setSi(ci.getSi());
+				
+				
+				cantidadIngredientes.addAll((Collection<? extends CantidadIngredienteModel>) cimodel);
+			}
+			model.setCantidadIngredientes(cantidadIngredientes);
 		}
-		model.setCantidadIngredientes(cantidadIngredientes);
+		else {
+			model.setCantidadIngredientes(null);
+		}
+		
+		
 		
 		
 		return model;
