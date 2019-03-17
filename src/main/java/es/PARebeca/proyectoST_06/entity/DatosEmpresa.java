@@ -2,13 +2,18 @@ package es.PARebeca.proyectoST_06.entity;
 
 import java.awt.Image;
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
 
+import javax.persistence.Basic;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.Max;
@@ -54,9 +59,13 @@ public class DatosEmpresa implements Serializable {
 	private int numeroDiasASortear;
 	
 	@Lob
-	private byte logo;
+	@Basic(optional = false, fetch = FetchType.EAGER)
+	@Column(name="logo", nullable=true)
+	private byte[] logo;
 
 	@OneToMany(cascade = CascadeType.MERGE, mappedBy="datosEmpresa")
+//	@OneToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER )
+//	@JoinColumn(name="idDatosEmpresa")
 	private List<Receta> recetas;
 	
 	
@@ -68,7 +77,7 @@ public class DatosEmpresa implements Serializable {
 
 	
 	public DatosEmpresa(@NotNull @NotBlank String nombre, @Min(1) @Max(100) int numeroTapasSorteoPalillo,
-			@Min(1) @Max(100) int numeroTapasSorteoCuchara, @Min(1) @Max(31) int numeroDiasASortear, byte logo,
+			@Min(1) @Max(100) int numeroTapasSorteoCuchara, @Min(1) @Max(31) int numeroDiasASortear, byte[] logo,
 			List<Receta> recetas) {
 		super();
 		Nombre = nombre;
@@ -121,11 +130,11 @@ public class DatosEmpresa implements Serializable {
 		this.numeroDiasASortear = numeroDiasASortear;
 	}
 
-	public byte getLogo() {
+	public byte[] getLogo() {
 		return logo;
 	}
 
-	public void setLogo(byte logo) {
+	public void setLogo(byte[] logo) {
 		this.logo = logo;
 	}
 
@@ -136,19 +145,21 @@ public class DatosEmpresa implements Serializable {
 				+ ", numeroDiasASortear=" + numeroDiasASortear + ", logo=" + logo + ", recetas=" + recetas + "]";
 	}
 
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((Nombre == null) ? 0 : Nombre.hashCode());
 		result = prime * result + idDatosEmpresa;
-		result = prime * result + logo;
+		result = prime * result + Arrays.hashCode(logo);
 		result = prime * result + numeroDiasASortear;
 		result = prime * result + numeroTapasSorteoCuchara;
 		result = prime * result + numeroTapasSorteoPalillo;
 		result = prime * result + ((recetas == null) ? 0 : recetas.hashCode());
 		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -166,7 +177,7 @@ public class DatosEmpresa implements Serializable {
 			return false;
 		if (idDatosEmpresa != other.idDatosEmpresa)
 			return false;
-		if (logo != other.logo)
+		if (!Arrays.equals(logo, other.logo))
 			return false;
 		if (numeroDiasASortear != other.numeroDiasASortear)
 			return false;
@@ -181,9 +192,6 @@ public class DatosEmpresa implements Serializable {
 			return false;
 		return true;
 	}
-
-	
-	
 
 	
 	

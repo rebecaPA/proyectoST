@@ -1,0 +1,22 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head  th:fragment="fragmentoHead">
+    <title> </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/general.css" th:href="@{/css/general.css}" />
+    <!-- javascript
+    	orden
+    		Etiqueta script con JQuery
+   			Etiqueta script con tu fichero externo
+   			Otra etiqueta script con otro fichero externo
+     -->
+    	<script  th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}"></script>
+		<script  th:src="@{/js/general.js}"  type="text/javascript"></script>
+ 
+  </head>
+
+
+ 

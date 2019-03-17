@@ -12,6 +12,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -47,7 +48,8 @@ public class Tapa implements Serializable {
     private Long idTapa;
     
     //antes Condicion 
-    @Enumerated
+    @Size(max=20)
+    @Enumerated (EnumType.STRING)
     private Tipo tipo;
     
     @NotBlank
@@ -67,7 +69,6 @@ public class Tapa implements Serializable {
    
     @ManyToOne
     //name es el nombre de la clave foranea
-    @JoinColumn(name="idprecio")
     private Precio precios;   
     
     
@@ -138,16 +139,16 @@ public class Tapa implements Serializable {
     }
     
 
-//    public List<Receta> getRecetas() {
-//		return recetas;
-//	}
-//
-//
-//
-//
-//	public void setRecetas(List<Receta> recetas) {
-//		this.recetas = recetas;
-//	}
+    public List<Receta> getRecetas() {
+		return recetas;
+	}
+
+
+
+
+	public void setRecetas(List<Receta> recetas) {
+		this.recetas = recetas;
+	}
 
 
 
@@ -205,7 +206,7 @@ public class Tapa implements Serializable {
 	@Override
 	public String toString() {
 		return "Tapa [idTapa=" + idTapa + ", tipo=" + tipo + ", nombre=" + nombre + ", fecha=" + fecha + ", servida="
-				+ servida + /* ", recetas=" + recetas +  */ ", precios=" + precios + "]";
+				+ servida +  ", recetas=" + recetas +   ", precios=" + precios + "]";
 	}
     
 

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import es.PARebeca.proyectoST_06.entity.CantidadIngrediente;
 import es.PARebeca.proyectoST_06.entity.Ingrediente;
 import es.PARebeca.proyectoST_06.model.CantidadIngredienteModel;
-import es.PARebeca.proyectoST_06.model.CantidadModel;
+
 import es.PARebeca.proyectoST_06.model.IngredienteModel;
 
 @Component("ingredienteConverter")
@@ -54,13 +54,19 @@ public class IngredienteConverter implements Converter<Ingrediente, IngredienteM
 		
 		return model;
 	}
-	
-	@Autowired
-	@Qualifier("ingredienteService")
+
 	@Override
 	public Ingrediente modelToEntity(IngredienteModel model) {
 		// TODO Auto-generated method stub
-		return entity;
+		return null;
 	}
+	
+//	@Autowired
+//	@Qualifier("ingredienteService")
+//	@Override
+//	public Ingrediente modelToEntity(IngredienteModel model) {
+//		// TODO Auto-generated method stub
+//		return entity;
+//	}
 
 }

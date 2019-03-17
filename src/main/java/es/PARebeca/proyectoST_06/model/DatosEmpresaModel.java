@@ -1,4 +1,4 @@
-package es.PARebeca.proyectoST_06.controler;
+package es.PARebeca.proyectoST_06.model;
 
 import java.util.List;
 
@@ -27,7 +27,7 @@ private static final long serialVersionUID = 1L;
 	@NotNull
 	@NotBlank
 	@Size(min=1, max=80)
-	private String Nombre;
+	private String Nombre= "El canalla";
 	
 	@Min(value = 1)
 	@Max(value = 100)
@@ -43,7 +43,7 @@ private static final long serialVersionUID = 1L;
 	private int numeroDiasASortear;
 	
 	@Lob
-	private byte logo;
+	private byte logo ;
 
 	@OneToMany(cascade = CascadeType.MERGE, mappedBy="datosEmpresa")
 	private List<Receta> recetas;
@@ -55,11 +55,10 @@ private static final long serialVersionUID = 1L;
 		
 	}
 
-	public DatosEmpresaModel(int idDatosEmpresa, @NotNull @NotBlank @Size(min = 1, max = 80) String nombre,
+	public DatosEmpresaModel( @NotNull @NotBlank @Size(min = 1, max = 80) String nombre,
 			@Min(1) @Max(100) int numeroTapasSorteoPalillo, @Min(1) @Max(100) int numeroTapasSorteoCuchara,
 			@Min(1) @Max(31) int numeroDiasASortear, byte logo, List<Receta> recetas) {
-		super();
-		this.idDatosEmpresa = idDatosEmpresa;
+		
 		Nombre = nombre;
 		this.numeroTapasSorteoPalillo = numeroTapasSorteoPalillo;
 		this.numeroTapasSorteoCuchara = numeroTapasSorteoCuchara;

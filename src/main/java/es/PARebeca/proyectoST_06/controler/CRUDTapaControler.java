@@ -19,16 +19,17 @@ import es.PARebeca.proyectoST_06.entity.Tapa;
 import es.PARebeca.proyectoST_06.model.PrecioModel;
 import es.PARebeca.proyectoST_06.model.TapaModel;
 import es.PARebeca.proyectoST_06.service.interfaces.Services;
+import es.PARebeca.proyectoST_06.service.interfaces.ServicioTapa;
 
 
-@Controller("tapa/*")
+@Controller("proyectoST/tapa/*")
 public class CRUDTapaControler {
 
 	private static final Logger LOG = LoggerFactory.getLogger(CRUDTapaControler.class);
 	
 	@Autowired
 	@Qualifier("tapaService")
-	private Services<Tapa,TapaModel> servicioT;
+	private  ServicioTapa servicioT;
 	
 //	@Autowired
 //	@Qualifier("precioService")

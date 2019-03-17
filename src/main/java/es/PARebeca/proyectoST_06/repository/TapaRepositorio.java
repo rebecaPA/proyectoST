@@ -13,4 +13,7 @@ public interface TapaRepositorio extends CrudRepository<Tapa, Serializable>{
 	public abstract Tapa findTapaByIdTapa(Long idTapa);
 	public abstract Tapa findTapaByNombre(String nombre);
 	public abstract List<Tapa> findAll();
+	
+//	@Query("SELECT t.nombre FROM Tapa t WHERE t.")
+//	public abstract List<Tapa> suerte();
 }

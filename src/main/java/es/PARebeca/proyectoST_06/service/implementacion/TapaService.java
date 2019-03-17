@@ -12,9 +12,10 @@ import es.PARebeca.proyectoST_06.entity.Tapa;
 import es.PARebeca.proyectoST_06.model.TapaModel;
 import es.PARebeca.proyectoST_06.repository.TapaRepositorio;
 import es.PARebeca.proyectoST_06.service.interfaces.Services;
+import es.PARebeca.proyectoST_06.service.interfaces.ServicioTapa;
 
 @Service("tapaService")
-public class TapaService implements Services<Tapa, TapaModel> {
+public class TapaService implements ServicioTapa {
 
 	private static final Logger LOG = LoggerFactory.getLogger(TapaService.class);
 	
@@ -23,100 +24,40 @@ public class TapaService implements Services<Tapa, TapaModel> {
 	TapaRepositorio repositorio;
 
 	@Override
-	public void save(Tapa c) {
-		repositorio.save(c);	
-	}
-
-	@Override
-	public List<Tapa> finder() {
-		
-		return (List<Tapa>) repositorio.findAll();
-	}
-
-	@Override
-	public List<Tapa> finder(String field, String value) {
+	public Tapa buscarId(Long id) {
+		LOG.info("-- tapaServicio.buscarId()");
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Tapa finderOne(String field, String value) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void delete(String value) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void delete(Tapa value) {
-		repositorio.delete(value);
-		
-	}
-
-	@Override
-	public boolean exist(Tapa value) {
-		
-		return false;
-	}
-
-	@Override
-	public boolean exist(String value) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public List<TapaModel> finderModel() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<TapaModel> finderModel(String field, String value) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public TapaModel finderOneMoidel(String field, String value) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Tapa> findByFilters(String[] filters) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<TapaModel> findByFiltersModel(String[] filters) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void saveModel(TapaModel model) {
-		
-		
-	}
-
-	@Override
-	public List<TapaModel> findByFiltersModel(String[] filters, String order, Boolean asc) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Tapa> findByFilters(String[] filters, String order, Boolean asc) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public List<Tapa> listarTapas() {
+		LOG.info("-- tapaServicio.listar()");
 	
+		return repositorio.findAll();
+		
+	}
 
+	@Override
+	public void crear(Long id) {
+		LOG.info("-- tapaServicio.crear()");
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void borrar(Long id) {
+		LOG.info("-- tapaServicio.borrar()");
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Tapa> sorteo(int nDias, int nTapasCuchara, int nTapasPalillo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 
 }

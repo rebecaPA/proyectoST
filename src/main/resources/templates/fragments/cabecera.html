@@ -2,11 +2,11 @@
 <body>
 
 <!-- 	fragmento de la cabecera, con el logo de empresa y nombre-->
-	<header th:fragment="header">
+	<header th:fragment="header" class="filaizq" >
 		<samp>
-			<img th:alt="#{logo} ${datosEmpresa.nombre}" th:src="@{datosEmpresa.logo}"}>
+			<img id="logo" th:alt="#{logo} " th:src="@{/imgs/logoPq.jpg}"/>
 		</samp>	
-		<h2 th:text="${datosEmpresa.nombre}"> </h2>
+		<h2 th:text="${datosEmpresaModel}"> </h2>
 	</header>
 	
 

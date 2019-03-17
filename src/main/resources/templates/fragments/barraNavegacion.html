@@ -2,29 +2,33 @@
 <body>
 
 <!-- 	fragmento de la cabecera, con el logo de empresa y nombre-->
-	<nav th:fragment="nav">
-		<ul>
+	<nav th:fragment="nav" class="nav">
+		<ul id="ulnav" class="filaderecha">
   			<li th:text="#{iniciar.Sorteo}"></li>
-  			<li th:text="#{tapas}">
-  				<ul>
+  			<li  class="nav">
+  				<span th:text="#{tapas}"></span>
+  				<ul class="oculta">
 	  				<li th:text="#{crear}"></li>
 	  				<li th:text="#{buscar}"></li>
   				</ul>	
   			</li>
-  			<li th:text="#{recetas}">
-  				<ul>
+  			<li class="nav" >
+  				<span th:text="#{recetas}"> </span>
+  				<ul class="oculta">
 	  				<li th:text="#{crear}"></li>
 	  				<li th:text="#{buscar}"></li>
   				</ul>
   			</li>
-  			<li th:text="#{ingredientes}">
-  				<ul>
+  			<li class="nav" >
+  				<span th:text="#{ingredientes}" ></span>
+  				<ul class="oculta">
 	  				<li th:text="#{crear}"></li>
 	  				<li th:text="#{buscar}"></li>
   				</ul>
   			</li>
-  			<li th:text="#{precios}">
-  				<ul>
+  			<li class="nav">
+  				<span  th:text="#{precios}"></span>
+  				<ul class="oculta">
 	  				<li th:text="#{crear}"></li>
 	  				<li th:text="#{buscar}"></li>
   				</ul>
