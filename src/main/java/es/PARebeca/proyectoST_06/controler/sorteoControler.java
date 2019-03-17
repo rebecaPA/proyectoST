@@ -47,7 +47,8 @@ public class sorteoControler {
 		
 		//para h2 de la cabecera cuando se cargue x bd hay q quitarlo
 		model.addAttribute("datosEmpresaModel", "El Canalla");
-		model.addAttribute("moselTapas",servicioT.listarTapas());
+		//llamar al servicio de datosEmpresa para cojer los datos
+		model.addAttribute("moselTapas",servicioT.sorteo(2, 1, 1));
 		
 //		LOG.info("--  salida  en sorteoControler.suert()" + model.toString());
 		return  Constantes.SORTEO;
