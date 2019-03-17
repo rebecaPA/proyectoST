@@ -15,39 +15,8 @@
   	<a th:href="@{/sorteoST/suerte}" class="botonSorteo">	
   		<button th:text="#{suerte}" id="botonSorteo" class="botonSorteo" ></button> 
   	</a>
-	<table th:if="${moselTapas}!= null" id="tablaTapa" class="tabla">
-		<thead>
-			<tr>
-				<th th:text="#{nombre}"></th>
-				<th th:text="#{nombre.receta}"></th>
-				<th th:text="#{tipo}"></th>
-				
-			</tr>
-		</thead>
-		
-		<tbody>
-			<tr th:each="tapa : ${moselTapas}">
-
-				<td th:text="${tapa.nombre}"></td>
-				<td  th:each="receta : ${tapa.recetas}"  th:text="${receta.nombre}"> </td>
-				<td th:text="${tapa.tipo}"></td>
-<!-- 				<td> -->
-<!-- 					<a th:href="@{/cudtapa(dasid=${tapa.dasid})}"> -->
-<!-- 						<button type="button"> -->
-<!-- 							<img th:src="@{/imgs/modify.png}" /> -->
-<!-- 						</button> -->
-<!-- 					</a>  -->
-<!-- 					<a th:if="${cookied!=tapa.dasid}" -->
-<!-- 					th:href="@{/cudtapa/removetapa(dasid=${tapa.dasid})}"> -->
-<!-- 						<button class="deletetapa" type="button"> -->
-<!-- 							<img th:src="@{/imgs/delete.png}" /> -->
-<!-- 						</button> -->
-<!-- 					</a> -->
-<!-- 				</td> -->
-
-			</tr>
-		</tbody>
-	</table>
+  	<h2 th:if="${moselTapas}!= null"  th:text= "#{resultaso}" ></h2>
+	<div th:replace="fragments/retales :: tablaTapas"></div>
 
 	</main>	
 	    
