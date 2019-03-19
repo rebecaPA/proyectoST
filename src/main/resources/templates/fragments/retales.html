@@ -37,7 +37,45 @@
 		</tbody>
 	</table>
 		
+<!-- 	tabla ingredientes -->
+	<table th:fragment="tablaIngredientes" th:if="${ingredientesModel}!= null" id="tablaingredientes" class="tabla">
+		<thead>
+			<tr>
+				<th th:text="#{nombre}"></th>
+				<th th:text="#{grupo}"></th>
+				<th th:text="#{cantidad}"></th>
+				
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="ingrediente : ${ingredientesModel}">
 
+				<td th:text="${ingrediente.nombre}"></td>
+				<td th:text="${ingrediente.grupo.value}"></td>
+				<td  th:each=" ci : ${ingrediente.cantidadIngredientes}"  > 
+					<span th:text="${ci.cantidad}"></span>
+					<span th:text="${ci.si}"></span>
+				</td>
+				
+				<td>
+					<div class="entidadUD">
+					<a th:href="@{/sorteoST/Ingredientes/modificarIngrediente(idIngrediente=${ingrediente.idIngrediente})}"  >
+						
+							<img th:src="@{/imgs/modify.png}"  th:title="#{modificar}"/>
+						
+					</a> 
+					<a th:href="@{/sorteoST/Ingredientes/borrarIngrediente(idIngrediente=${ingrediente.idIngrediente})}" >
+						
+							<img th:src="@{/imgs/delete.png}" th:title="#{borrar}" />
+						
+					</a>
+					</div>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
 	
 
 

@@ -8,7 +8,7 @@ public interface ServicioTapa {
 
 	public abstract Tapa buscarId(Long id);
 	public abstract List<Tapa> listarTapas();
-	public abstract void crear(Long id);
+	public abstract void crear(Tapa tapa);
 	public abstract void borrar(Long id);
 	public abstract List<Tapa> sorteo(int nDias, int nTapasCuchara, int nTapasPalillo);
 	

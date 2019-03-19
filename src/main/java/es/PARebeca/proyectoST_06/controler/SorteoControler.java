@@ -29,7 +29,17 @@ public class SorteoControler {
 //	@Qualifier("datosEmpresaServicie")
 //	private Services<DatosEmpresa, DatosEmpresaModel> servicioDE;
 	
-	@GetMapping("/sorteoST/sorteo")
+	@GetMapping("/proyectoST")
+	private String redirectcontactSorteo( Model model ){
+		
+		LOG.info("-- METODO: redirectcontactform " );
+		model.addAttribute("datosEmpresaModel", "El Canalla");
+		
+		return Constantes.SORTEO;
+	}
+	
+	
+	@GetMapping("proyectoST/sorteo")
 	private String sorteo(Model model) {
 		LOG.info("-- entrade en sorteoControler.sorteo()");
 		
@@ -41,7 +51,7 @@ public class SorteoControler {
 	//	return "fragments/barraNavegacion";
 	}
 	
-	@GetMapping("/sorteoST/suerte")
+	@GetMapping("proyectoST/suerte")
 	private String suerte(Model model) {
 		LOG.info("-- entrade en sorteoControler.suerte()");
 		

@@ -2,9 +2,46 @@
 <body>
 
 <!-- 	fragmento de la cabecera, con el logo de empresa y nombre-->
-	<nav th:fragment="nav" class="nav">
+	<nav  th:if="${moselTapas}== null" th:fragment="2nav" class="nav">
 		<ul id="ulnav" class="filaderecha">
-  			<li th:text="#{iniciar.Sorteo}"></li>
+		
+  			<li>
+  				<a th:if="${moselTapas}== null" th:href="@{/proyectoST/sorteo}" class="botonSorteo"  th:text="#{iniciar.Sorteo}"></a>
+  			</li>
+  			<li  class="nav">
+  				<span th:text="#{tapas}"></span>
+  				<ul class="oculta">
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>	
+  			</li>
+  			<li class="nav" >
+  				<span th:text="#{recetas}"> </span>
+  				<ul class="oculta">
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>
+  			</li>
+  			<li class="nav" >
+  				<span th:text="#{ingredientes}" ></span>
+  				<ul class="oculta">
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>
+  			</li>
+  			<li class="nav">
+  				<span  th:text="#{precios}"></span>
+  				<ul class="oculta">
+	  				<li th:text="#{crear}"></li>
+	  				<li th:text="#{buscar}"></li>
+  				</ul>
+  			</li>
+  		</ul>
+	</nav>
+	
+<nav  th:fragment="navInicio" class="navInicio">
+		<ul id="ulnav" class="filaderecha">
+  			
   			<li  class="nav">
   				<span th:text="#{tapas}"></span>
   				<ul class="oculta">

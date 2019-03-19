@@ -41,7 +41,7 @@ public class TapaService implements ServicioTapa {
 	}
 
 	@Override
-	public void crear(Long id) {
+	public void crear(Tapa tapa) {
 		LOG.info("-- tapaServicio.crear()");
 		// TODO Auto-generated method stub
 		

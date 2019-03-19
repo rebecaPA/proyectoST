@@ -75,6 +75,14 @@ header{
 	
 }
 
+li >a:link{
+	text-decoration:none;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1rem;
+	font-weight:normal;
+	color:black;
+} 
+
 h2{
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
@@ -132,7 +140,7 @@ nav ul li span:hover{
 
 /**       # MAIN #     **/
 
-#main{
+#main,.main{
 	flex: 100%;
 	justify-content: center;
 }
@@ -155,7 +163,7 @@ a.botonSorteo{
 	text-shadow: 1px 2px #999;
 	color: #006a00;
 	border: 0.05rem dotted #004800;	
-	border-radius: 50%;
+	border-radius: 25px;
 	-webkit-box-shadow: 2px 2px 2px 1px #888888 ;
 	        box-shadow: 2px 2px 2px 1px #888888 ;
 	transition: color 0.5s, font-weight 0.6s, border-radius 1s, font-size 0.5s, width 0.8s ease 0.2s;
@@ -229,11 +237,18 @@ table{
 
 th, td{
 	border: 0.1rem solid gray;
-	padding: 0.05rem;
+	margin:0.06;
+	padding: 0.09rem;
 	-webkit-box-shadow: 2px 1px 1px 1px #bebebe ;
 	        box-shadow: 2px 1px 1px 1px #bebebe ;
 }
 
+
+/* icones crud */
+
+.entidadUD{
+	padding: 0.5rem;
+}
 
 /**       # PIE #     **/
 

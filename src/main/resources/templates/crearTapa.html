@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" media="all" 
-          href="../../css/general.css" th:href="@{/css/general.css}" />
-  </head>
 
-  <body class="filaCentrado">
+<head th:replace="fragments/head :: fragmentoHead"></head>
+
+  <body class= "filaCentrado">
+  
+  	<header  th:replace=" fragments/cabecera :: header"></header>
+  	<nav  th:replace=" fragments/barraNavegacion :: 2nav"></nav>
+  
   
     <h2  th:text="#{crearTapa}"></h2>
-    <form th:action="@{/tapa/crear}" method="post" th:object="${tapaModel}" class="form">
+    <form th:action="@{/proyectoST/tapa/crear}" method="post" th:object="${tapaModel}" class="form">
 			
 
 			<input th:if="${tapaModel.idTapa != null} " type="text" id="idTapa" name="idTapa" th:value="${tapaModel.idTapa}" hidden />

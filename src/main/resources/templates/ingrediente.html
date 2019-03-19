@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head :: fragmentoHead"></head>
+
+  <body class= "filaCentrado">
+  
+  	<header  th:replace=" fragments/cabecera :: header"></header>
+  	<nav  th:replace=" fragments/barraNavegacion :: navInicio "></nav>
+  
+  	<main id="mainIngrediente" class="filaCentrado main" >
+  
+	  	
+	  	<h2 th:if="${ingredientesModel}!= null"  th:text= "#{ingrediente}" ></h2>
+		<div th:replace="fragments/forms :: formIngrediente"></div>
+
+	</main>	
+	    
+  	<footer></footer>
+  	
+  	
+  </body>
+</html>

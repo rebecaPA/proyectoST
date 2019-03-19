@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+	
+	 <form th:fragment="formIngrediente" th:action="@{/proyectoST/Ingredientes/creado}" method="post" th:object="${tapaModel}" class="form">
+				
+	
+				<input  type="number" id="idIngrediente" name="idIngrediente" th:value="${ingredientesModel.idIngrediente}" hidden />
+			
+			
+			
+			<fieldset>
+				<legend th:text="#{nombre} + ':'"></legend>
+				<input type="text" id="nombre" name="nombre" th:value="${ingredientesModel.nombre}" th:placeholder="#{index.placeholder.required}"  maxlength="50" required autofocus />
+	<!-- 			<div class="msmhiden" th:utext="#{patterdasid}"></div> -->
+			</fieldset>
+<!-- 			<p th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}" class="errorlabel"></p> -->
+			
+			<fieldset >
+				<legend th:text="#{legend.grupo}"> </legend>
+	<!-- 			<div class="msmhiden" th:utext="#{required}"></div> -->
+				<select  th:field="*{{grupo}}" required>
+	<!-- 				<option th:each="t : ${tipo}" th:value="${t}" th:text="${t}"> -->
+					<option  th:value="G1" th:text="#{G1}" selected>
+					<option  th:value="G2" th:text="#{G2}">
+					<option  th:value="G3" th:text="#{G3}">
+					<option  th:value="G4" th:text="#{G4}">
+					<option  th:value="G5 " th:text="#{G5}">
+					<option  th:value="G6 " th:text="#{G6}">
+					<option  th:value="G7 " th:text="#{G7}">
+					<option  th:value="G8 " th:text="#{G8}">
+				</select>
+			</fieldset>
+<!-- 			<fieldset > -->
+<!-- 				<legend th:text="#{legend.cantidadIngrediente}"> </legend> -->
+				
+<!-- 	<!-- 			<div class="msmhiden" th:utext="#{required}"></div> --> -->
+<!-- 				<input type="text" id="cantidad" name="cantidad" th:value="${cantidadIngredientes.cantidad}"  maxlength="50"  /> -->
+<!-- 				<select  th:field="*{{cantidadIngredientes}}" required> -->
+				
+<!-- 					<option th:each="ci : ${cantidadIngredientes}" th:value="${ci.si}" th:text="${ci.si}"> -->
+					
+<!-- 				</select> -->
+<!-- 			</fieldset> -->
+			
+			<div class="boton">
+				<button type="submit" th:text="#{crear }"></button>
+			
+				<button type="reset"> <img th:src="@{/imgs/rubber.png}"/></button>
+			</div>
+			
+		</form>
+	  
+
+
+</html>

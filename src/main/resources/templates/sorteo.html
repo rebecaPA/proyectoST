@@ -6,13 +6,17 @@
   <body class= "filaCentrado">
   
   	<header  th:replace=" fragments/cabecera :: header"></header>
-  	<nav  th:replace=" fragments/barraNavegacion :: nav "></nav>
+  	<nav  th:replace=" fragments/barraNavegacion :: navInicio "></nav>
+  
   
   	<main class="filaCentrado" id="main">
-  
-	  	<a th:if="${moselTapas}== null" th:href="@{/sorteoST/suerte}" class="botonSorteo">	
+  		
+  		<h2 th:if="${moselTapas}== null"  th:text= "#{suerte}" ></h2>
+  		
+	  	<a th:if="${moselTapas}== null" th:href="@{/proyectoST/suerte}" class="botonSorteo">	
 	  		<button th:text="#{suerte}" id="botonSorteo" class="botonSorteo" ></button> 
 	  	</a>
+	  		
 	  	<h2 th:if="${moselTapas}!= null"  th:text= "#{resultaso}" ></h2>
 		<div th:replace="fragments/retales :: tablaTapas"></div>
 
