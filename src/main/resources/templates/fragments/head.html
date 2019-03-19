@@ -1,12 +1,16 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 <head  th:fragment="fragmentoHead">
-    <title> </title>
+    <title>El Canalla </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
     <!-- css -->
     <link rel="stylesheet" type="text/css" media="all" 
           href="../../css/general.css" th:href="@{/css/general.css}" />
+      <link rel="icon"  th:href="@{/imgs/favicon.ico}" type="image/vnd.microsoft.icon" />
+      <!-- for IOS Device-->
+	<link rel="apple-touch-icon" type="image/vnd.microsoft.icon" th:href="@{/imgs/favicon.ico}" />
+	<link rel="icon" type="image/vnd.microsoft.icon" th:href= "@{/imgs/favicon.ico}" />
+	 
     <!-- javascript
     	orden
     		Etiqueta script con JQuery

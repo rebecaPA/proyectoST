@@ -15,7 +15,7 @@ import es.PARebeca.proyectoST_06.service.interfaces.Services;
 import es.PARebeca.proyectoST_06.service.interfaces.ServicioTapa;
 
 @Controller("proyectoST/sorteo*")
-public class sorteoControler {
+public class SorteoControler {
 
 	private static final Logger LOG = LoggerFactory.getLogger(CRUDTapaControler.class);
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head th:replace="fragments/head :: fragmentoHead"></head>
+
+	 <body class= "filaCentrado">
+	 
+	 	<header  th:replace=" fragments/cabecera :: header"></header>
+	 
+	 	<main class="filaCentrado errorE" id="main">
+		  	<h2 th:text= "#{403}" ></h2>
+			
+			<img  th:src="@{/imgs/icon-training.png}" />
+			<div id="divBack" class="back">
+				 <a th:href="#{back}">
+				 	<img th:src="@{/imgs/retroceder2.png}" class="back" alt="#{a.back}"/>
+				 	<span class="back" th:text="#{a.back}"></span>
+				  </a>
+			</div>
+			  	
+		</main>	
+		   	
+	 	<footer></footer>	
+	 	
+	 </body>	
+	
+</html>

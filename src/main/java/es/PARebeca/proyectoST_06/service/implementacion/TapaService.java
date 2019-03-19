@@ -120,7 +120,7 @@ public class TapaService implements ServicioTapa {
 					//cambiar Estado
 					for (Tapa tapa : tapasServidas) {
 
-						if(tapa.getTipo().toString().equals("cuchara")) {
+						if(tapa.getTipo().toString().equals("cuchara") && tapa.isServida() ) {
 							tapa.setServida(false);
 							tapasCuchara.add(tapa);	
 						}
@@ -157,7 +157,7 @@ public class TapaService implements ServicioTapa {
 					//cambiar Estado
 					for (Tapa tapa : tapasServidas) {
 
-						if(tapa.getTipo().toString().equals("palillo")) {
+						if(tapa.getTipo().toString().equals("palillo") && tapa.isServida()) {
 							tapa.setServida(false);
 							tapasPalillo.add(tapa);	
 						}
@@ -190,14 +190,20 @@ public class TapaService implements ServicioTapa {
 		int i=0;
 		boolean existe= false;
 		
-		n= (int) (Math.random()*tiradas);
+		
+		n= (int) (Math.random()*tapas.size());
+		
 		arrai.add(n);
+		tapas.get(n).setServida(true);
 		tapasS.add(tapas.get(n));
 		
-		while (arrai.size() >tiradas) {
-			n= (int) (Math.random()*tiradas);
-			while (existe || (arrai.size()> i)) {
-				
+		while (arrai.size() < tiradas) {
+			System.out.println("   --- antes     tamaño de array tapas "+arrai.size());
+			n= (int) (Math.random()*tapas.size());
+			existe=false;
+			
+			while (!existe && (i<arrai.size())) {
+				System.out.println("   ---     tamaño de array despues "+arrai.size() +"  i"+i);	
 				if(arrai.get(i)==n) {
 					existe= true;
 				}
@@ -205,6 +211,8 @@ public class TapaService implements ServicioTapa {
 			}
 			if(!existe) {
 				arrai.add(n);
+				tapas.get(n).setServida(true);
+				tapasS.add(tapas.get(n));
 			}
 		}
 		

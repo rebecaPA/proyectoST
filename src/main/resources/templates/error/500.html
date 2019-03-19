@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	
+	<meta charset="UTF-8" />
+	<title th:text="#{title.500}"></title>
+	
+	
+	<!-- 
+		rebeca pena alvarez
+		6/10/2018
+		[US01-] Diseño de frontend crear Home
+		
+		hojas de estilos
+	-->
+	
+	<link th:href="@{/css/styleshowusers.css}" rel="stylesheet" />
+	
+	
+	<!-- for IOS Device-->
+	<link rel="apple-touch-icon" sizes="44x44"
+		href="https://atos.net/wp-content/themes/atos/images/favicons/atos-bookmark-icon-44x44.png" />
+	<link rel="apple-touch-icon" sizes="72x72"
+		href="https://atos.net/wp-content/themes/atos/images/favicons/atos-bookmark-icon-72x72.png" />
+	
+	<!-- for android -->
+	<link rel="icon" href="../../static/imgs/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32" />
+
+</head>
+<body class=" container">
+
+
+	<div th:replace="fragments/header :: headerAll"></div>
+	
+	<div class="container ">
+		<h2 th:text="#{h2.apologies}"></h2> 
+		
+		<div class="exception container">
+			<img  th:src="@{/imgs/icon-training.png}" />
+			<img  th:src="@{/imgs/manufacturing.png}" />	
+
+		</div>
+		<div class="back containerFlexStart ">
+			
+			<a th:href="#{back}"><span class="back" th:text="#{a.back}"> </span><img th:src="@{/imgs/retroceder2.png}"/></a> 
+		</div>
+	
+		
+	</div>
+	
+	
+	
+	<div  th:include="fragments/foot"></div>
+
+
+
+</body>
+</html>
